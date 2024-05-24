@@ -1,0 +1,251 @@
+html{
+    scroll-behavior: smooth;
+    line-height: 1.4px;
+}
+:root{
+    --main-progress-hight:2rem;
+}
+.progress-hight{
+    height: var(--main-progress-hight) !important;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.7)) , url(../imgs/bg.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+header i {
+    width: 15px;
+    height: 15px;
+}
+.about button , .services span , .services i , .main-scale img , .main-layer , .tabs-layer{
+    transition: all  0.5s;
+}
+.btn1-hover:hover{
+background-color: white !important;
+color: black !important;
+}
+.btn2-hover:hover{
+background-color: black !important;
+color: white !important;
+}
+.dots-background{
+    position: relative;
+}
+.dots-background::after{
+    content: "";
+    background-image: url(../imgs/dots.png);
+    position: absolute;
+    top: 16%;
+    left: 3.5%;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+}
+
+.heading{
+    position: relative;
+}
+.heading::after{
+    content: "";
+    background-image: url(../imgs/dots.png);
+    width: 280px;
+    height: 10px;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}
+.contact i{
+    width: 40px;
+    height: 40px;
+}
+.services span{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+}
+.card-hover:hover span{
+background-color: rgba(0,0,0,1) !important;
+}
+.card-hover:hover i{
+    color: white;
+}
+.w-10{
+    width: 10%;
+}
+.indicator{
+    width: 10px !important;
+    height: 10px !important; 
+    background-color: grey !important;
+ }
+ .bg-main{
+    background-color: #5b5b5b;
+ }
+ .main-scale{
+    overflow: hidden;
+ }
+ .main-scale:hover img{
+    transform: scale(1.3);
+ }
+.main-layer{
+    z-index: 999999 !important;
+    top: 2.5%;
+    width: 95%;
+    height: 95%;
+    left: 2.5%;
+    transform: translateX(120%);
+   transform: rotateY(0deg);
+   opacity: 0;
+}
+.tabs-layer i{
+    width: 40px;
+    height: 40px;
+}
+.tabs-layer{
+    z-index: 99;
+    top: 1.5%;
+    left: 1.5%;
+    width: 97%;
+    height: 97%;
+    opacity: 0;
+}
+.portfolio .card:hover .tabs-layer{
+   opacity: 1;
+}
+.team li:hover , .portfolio li:hover{
+    background-color: white !important;
+    border: 1px solid black ;
+}
+.team li:hover i , .portfolio li:hover i{
+    color: black !important;
+}
+.card:hover .main-layer{
+    transform: translateX(0);
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+.team ul{
+    top: 250px;
+    position: relative;
+}
+.foot-color{
+    color: #748182;
+}
+.contact .container {
+    margin-top: -70px !important;
+}
+.nav-tabs .nav-item.show .nav-link , .nav-tabs .nav-link.active  {
+border-bottom: 3px solid black;
+border-top-color: transparent !important;
+border-left-color: transparent !important;
+border-right-color: transparent !important;
+}
+.nav-tabs .nav-link:focus , .nav-tabs .nav-link:hover{
+    border-top-color: transparent !important;
+border-left-color: transparent !important;
+border-right-color: transparent !important;
+}
+.portfolio i{
+    transform: translateY(20%);
+}
+.nav-lik-h{
+    height: 33px;
+}
+.nav-link-hover:hover{
+border-bottom: 3px solid white;
+}
+
+header h2::after{
+    content: "";
+    animation-name:  header-animation;
+    animation-duration: 7s;
+    font-size: 45px;
+}
+@keyframes header-animation{
+    0% {content:" L|"}
+    2% {content:"La|"}
+    4% {content:"Lar|"}
+    6% {content:"Larr|"}
+    8% {content:"Larry|"}
+    10% {content:"Larry|"}
+    12% {content:"Larry D|"}
+    14% {content:"Larry D|"}
+    16% {content:"Larry Da|"}
+    18% {content:"Larry Dan|"}
+    20% {content:"Larry Dani|"}
+    22% {content:"Larry Danie|"}
+    24% {content:"Larry Daniel|"}
+    26% {content:"Larry Daniels|"}
+    28% {content:"Larry Daniel|"}
+    30% {content:"Larry Danie|"}
+    32% {content:"Larry Dani|"}
+    34% {content:"Larry Dan|"}
+    36% {content:"Larry Da|"}
+    38% {content:"Larry D|"}
+    40% {content:"Larry |"}
+    42% {content:"Larry|"}
+    44% {content:"Larr|"}
+    46% {content:"Lar|"}
+    48% {content:"La|"}
+    50% {content:"L|"}
+    52% {content:"D|"}
+    54% {content:"De|"}
+    56% {content:"Dev|"}
+    58% {content:"Deve|"}
+    60% {content:"Devel|"}
+    62% {content:"Develo|"}
+    64% {content:"Develop|"}
+    66% {content:"Develope|"}
+    68% {content:"Developer|"}
+    70% {content:"Develope|"}
+    72% {content:"Develop|"}
+    74% {content:"Develo|"}
+    76% {content:"Devel|"}
+    78% {content:"Deve|"}
+    80% {content:"Deve|"}
+    82% {content:"Dev|"}
+    84% {content:"De|"}
+    86% {content:"D|"}
+    88% {content:"De|"}
+    90% {content:"Des|"}
+    92% {content:"Desi|"}
+    94% {content:"Desin|"}
+    96% {content:"Desine|"}
+    100% {content:"Desiner|"}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:676px){
+    .dots-background::after{
+      top: 18%;
+      left: -8%;
+    }
+    .dots-background{
+       margin-bottom: 70px;
+    }
+    .heading::after{
+        width: 160px;
+    }
+    .w-md-75{
+        width: 100% !important;
+    }
+}
